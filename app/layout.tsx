@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Space_Grotesk, Montserrat } from "next/font/google";
 import "./globals.css";
 import { childProps } from "@/types";
+import { ThemeProvider } from "@/components/providers/theme-provider";
 
 const montserrat = Montserrat({
   variable: "--font-Montserrat",
@@ -22,11 +23,18 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: childProps) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${montserrat.variable} ${spaceGrotesk.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="system"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
