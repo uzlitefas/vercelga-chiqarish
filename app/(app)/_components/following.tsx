@@ -13,9 +13,8 @@ import React from "react";
 const Following = () => {
   return (
     <>
-      {" "}
       <SidebarGroup>
-        <SidebarGroupLabel>Pages</SidebarGroupLabel>
+        <SidebarGroupLabel>VIP Users</SidebarGroupLabel>
         <SidebarContent>
           <SidebarMenu className="space-y-2">
             {users.map((item) => (

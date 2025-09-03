@@ -20,7 +20,7 @@ const Navigation = () => {
   return (
     <>
       <SidebarGroup>
-        <SidebarGroupLabel>Pages</SidebarGroupLabel>
+        <SidebarGroupLabel>Navigation</SidebarGroupLabel>
         <SidebarContent>
           <SidebarMenu className="-space-y-1">
             {navigation_link.map((item) => (
