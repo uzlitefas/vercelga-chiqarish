@@ -6,16 +6,13 @@ import AppNavbar from "./_components/navbar/app-navbar";
 
 const Layout = ({ children }: childProps) => {
   return (
-    <div>
-      {" "}
-      <SidebarProvider>
-        <AppSidebar />
-        <main>
-          <AppNavbar/>
-          {children}
-        </main>
-      </SidebarProvider>
-    </div>
+    <SidebarProvider>
+      <AppSidebar />
+      <main className="w-full">
+        <AppNavbar />
+        {children}
+      </main>
+    </SidebarProvider>
   );
 };
 
