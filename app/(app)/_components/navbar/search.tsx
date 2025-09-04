@@ -2,7 +2,7 @@
 
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { SearchCheck, X } from "lucide-react";
+import { SearchIcon, X } from "lucide-react";
 import { useRouter } from "next/navigation";
 import React, { useState, FormEvent } from "react";
 import { stringifyUrl } from "query-string";
@@ -41,7 +41,7 @@ const Search = () => {
         />
       )}
       <Button type="submit" variant={"outline"} className="rounded-l-[0px]">
-        <SearchCheck />
+        <SearchIcon />
       </Button>
     </form>
   );
