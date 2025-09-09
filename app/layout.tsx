@@ -3,7 +3,6 @@ import { Space_Grotesk, Montserrat } from "next/font/google";
 import "./globals.css";
 import { childProps } from "@/types";
 import { ThemeProvider } from "@/components/providers/theme-provider";
-import { ClerkProvider } from "@clerk/nextjs";
 import ClerkProviders from "@/components/providers/clerk-provider";
 
 const montserrat = Montserrat({
